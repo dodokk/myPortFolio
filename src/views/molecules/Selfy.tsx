@@ -35,11 +35,11 @@ const InnerWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   :before {
     content: "";
     display: block;
-    padding-top: 133%;
+    padding-top: 100%;
   }
 `;
 

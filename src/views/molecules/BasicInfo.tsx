@@ -8,9 +8,7 @@ interface Props {
   university: string;
   address: string;
   birthdate: string;
-  email: string;
   github: string;
-  twitter: string;
   company: string;
 }
 
@@ -21,9 +19,7 @@ const BasicInfo: React.FC<Props> = props => {
       <BasicInfoLow title="University" content={props.university} />
       <BasicInfoLow title="Address" content={props.address} />
       <BasicInfoLow title="BirthDate" content={props.birthdate} />
-      <BasicInfoLow title="Email" content={props.email} />
       <BasicInfoLow title="Github" content={props.github} />
-      <BasicInfoLow title="Twitter" content={props.twitter} />
       <BasicInfoLow title="Company" content={props.company} />
     </Wrapper>
   );
@@ -31,7 +27,7 @@ const BasicInfo: React.FC<Props> = props => {
 
 const Wrapper = styled.div`
   width: calc(100% - 30px * 2);
-  height: 30%;
+  height: calc(40% - 30px * 2);
   padding: 30px;
   background-color: #323232;
   display: flex;

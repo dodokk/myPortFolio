@@ -19,8 +19,9 @@ const ArticleWrapper: React.FC<Props> = props => {
 };
 
 const Element = styled(OriginalElement)`
-  margin: 80px 30px;
-  width: calc(100% - 30px * 2);
+  margin: 40px 0px;
+  width: calc(100% - 0px * 2);
+  min-width: 1000px;
 `;
 
 export default ArticleWrapper;
