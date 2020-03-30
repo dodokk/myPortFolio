@@ -10,10 +10,12 @@ const ArticleTitle: React.FC<Props> = props => {
 };
 
 const Wrapper = styled.h3`
-  width: 100%;
+  width: 90%;
+  margin: 100px auto;
   text-align: center;
-  font-size: 30px;
+  font-size: 46px;
   font-family: "Josefin Sans", sans-serif;
+  color: #666;
 `;
 
 export default ArticleTitle;

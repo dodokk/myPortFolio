@@ -11,11 +11,12 @@ import { AboutMe, Career, Skills, Works, Contact } from "../organisms/Articles";
 import Footer from "../organisms/Footer";
 
 const getLabels = () => [
+  { text: "Home", id: "home" },
   { text: "AboutMe", id: "aboutme" },
   { text: "Career", id: "career" },
   { text: "Skills", id: "skills" },
   { text: "Works", id: "works" },
-  { text: "Contact", id: "contact" }
+  // { text: "Contact", id: "contact" }
 ];
 
 const Home: React.FC = props => {
@@ -26,13 +27,13 @@ const Home: React.FC = props => {
 
   return (
     <Wrapper>
-      <Header labels={labels} />
       <Top />
+      <Header labels={labels} />
       <AboutMe />
       <Career />
       <Skills />
       <Works />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </Wrapper>
   );
@@ -40,6 +41,7 @@ const Home: React.FC = props => {
 
 const Wrapper = styled.div`
   width: 100%;
+  min-width: 1000px;
 `;
 
 export default Home;

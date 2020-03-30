@@ -4,24 +4,25 @@ import styled from "styled-components";
 import { headerHeight } from "../../utils/size";
 import src from "../../assets/top.jpg";
 import TopContent from "../molecules/TopContent";
+import { Element } from "react-scroll";
 
 const Top: React.FC = props => {
   return (
-    <Wrapper>
+    <Wrapper name="home">
       <TopContent
-        title="DOKKOI."
+        title="Welcome"
         text="
-        This is the portfolio site of dokkoi.
-        Please see my history or abilities.
+        佐藤 更星 のポートフォリオサイトへようこそ。
         "
       />
     </Wrapper>
   );
 };
 
-const Wrapper = styled.div`
+const Wrapper = styled(Element)`
+  position: sticky;
   width: 100%;
-  height: calc(100vh - ${headerHeight});
+  height: calc(100vh);
   background-image: url(${src});
   background-position: center center;
   background-size: cover;
@@ -29,6 +30,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-blend-mode:lighten;
   :before {
     content: "";
     display: block;

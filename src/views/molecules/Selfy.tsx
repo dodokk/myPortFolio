@@ -22,6 +22,7 @@ const TopContent: React.FC<Props> = props => {
 
 const Wrapper = styled.div<{ src: string }>`
   width: 100%;
+  height: 100%;
   background-image: url(${({ src }) => src});
   background-position: center center;
   background-size: cover;
@@ -36,11 +37,6 @@ const InnerWrapper = styled.div`
   justify-content: flex-end;
   align-items: flex-end;
   background-color: rgba(255, 255, 255, 0.7);
-  :before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-  }
 `;
 
 const Description = styled.div`
@@ -62,6 +58,7 @@ const Title = styled.h3`
   font-size: 45px;
   letter-spacing: 4px;
   text-transform: uppercase;
+  color: #323232;
 `;
 
 export default TopContent;

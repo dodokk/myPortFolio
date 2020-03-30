@@ -34,6 +34,8 @@ const Wrapper = styled.div`
   height: ${headerHeight};
   width: calc(100% - 20px * 2);
   background-color: white;
+  z-index: 10;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 `;
 
 export default Header;

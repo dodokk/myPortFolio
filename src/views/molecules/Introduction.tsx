@@ -6,7 +6,7 @@ interface Props {
   text: string;
 }
 
-const TopContent: React.FC<Props> = props => {
+const Introduction: React.FC<Props> = props => {
   return (
     <Wrapper>
       <Title>{props.title}</Title>
@@ -17,9 +17,10 @@ const TopContent: React.FC<Props> = props => {
 
 const Wrapper = styled.div`
   width: calc(100% - 30px * 2);
-  height: calc(60% - 20px * 2);
+  height: calc(60%);
   padding: 20px 30px;
   background-color: #f9f9f9;
+  overflow-y: scroll;
 `;
 
 const Title = styled.div`
@@ -34,4 +35,4 @@ const Text = styled.div`
   line-height: 2;
 `;
 
-export default TopContent;
+export default Introduction;

@@ -17,7 +17,7 @@ const HeaderItem: React.FC<Props> = props => {
         to={props.to}
         spy={true}
         smooth={true}
-        offset={-headerHeightNum}
+        offset={-headerHeightNum-30}
         duration={1000}
       >
         {props.text}

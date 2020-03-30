@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
+import React from "react";
 import styled from "styled-components";
 import HeaderItem from "../atoms/HeaderItem";
 import { Label } from "../../utils/types";

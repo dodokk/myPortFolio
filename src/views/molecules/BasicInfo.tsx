@@ -27,7 +27,7 @@ const BasicInfo: React.FC<Props> = props => {
 
 const Wrapper = styled.div`
   width: calc(100% - 30px * 2);
-  height: calc(40% - 30px * 2);
+  height: calc(40%);
   padding: 30px;
   background-color: #323232;
   display: flex;
